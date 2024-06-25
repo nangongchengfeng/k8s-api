@@ -16,9 +16,9 @@ import requests
 
 class Image():
     def __init__(self):
-        self.host = "bdata-hub.fujfu.cn"
+        self.host = "bdata-hub.xxxxxx.cn"
         self.username = "admin"
-        self.password = "Wp37HfFGzGxnmVX9"
+        self.password = "xxxxxx"
 
     """
     使用requests库发送请求，获取镜像仓库的token，用于后续的请求，获取信息
