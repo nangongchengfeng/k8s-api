@@ -1,1 +1,42 @@
 2024-05-21 10:16:10.339 INFO | [MainThread] app [104] | LogHandler.py <module> | this is a test msg
+2024-06-24 16:34:19.377 INFO | [Thread-2] app [18] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:34:48.359 INFO | [Thread-2] app [18] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:35:32.213 INFO | [Thread-2] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:35:43.401 INFO | [Thread-3] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:35:44.962 INFO | [Thread-4] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:36:51.527 INFO | [Thread-2] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']
+2024-06-24 16:36:58.638 INFO | [Thread-3] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']
+2024-06-24 16:37:06.542 INFO | [Thread-2] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:39:03.446 INFO | [Thread-2] app [19] | NameSpaceController.py list_ns | 获取所有命名空间：{'code': 0, 'msg': '', 'data': ['argocd', 'awx', 'books', 'database', 'dev-team', 'heian', 'istio-system', 'jenkins', 'kuboard', 'metallb-system', 'monitoring', 'openvpn', 'prod', 'sre']}
+2024-06-24 16:39:08.027 INFO | [Thread-3] app [38] | NameSpaceController.py get_ns | 获取命名空间：argocd
+2024-06-24 16:39:08.039 INFO | [Thread-3] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：argocd
+2024-06-24 16:39:08.089 ERROR | [Thread-3] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:39:15.248 INFO | [Thread-4] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:39:15.260 INFO | [Thread-4] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:39:15.283 ERROR | [Thread-4] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:39:31.190 INFO | [Thread-5] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:39:31.203 INFO | [Thread-5] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:39:31.231 ERROR | [Thread-5] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:45:10.308 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:45:10.330 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:45:10.356 ERROR | [Thread-2] app [93] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:45:30.304 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:45:30.321 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:45:30.344 ERROR | [Thread-2] app [93] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:45:51.703 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:45:51.719 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:45:51.743 ERROR | [Thread-2] app [93] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:47:20.427 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:47:20.447 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:47:20.469 ERROR | [Thread-2] app [94] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 16:48:46.093 INFO | [Thread-6] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:48:46.141 INFO | [Thread-6] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:50:17.924 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：awx
+2024-06-24 16:50:17.941 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：awx
+2024-06-24 16:50:17.966 ERROR | [Thread-2] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 17:41:02.431 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：Deployment
+2024-06-24 17:41:02.447 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：Deployment
+2024-06-24 17:41:02.461 ERROR | [Thread-2] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}
+2024-06-24 17:41:26.498 INFO | [Thread-2] app [38] | NameSpaceController.py get_ns | 获取命名空间：Deployment
+2024-06-24 17:41:26.516 INFO | [Thread-2] app [49] | NameSpaceService.py get | 获取命名空间的相关信息：Deployment
+2024-06-24 17:41:26.527 ERROR | [Thread-2] app [92] | NameSpaceService.py get | 获取命名空间的相关信息失败：{'code': 1, 'msg': '查询失败,请检查命名空间是否设置资源配额'}

@@ -6,4 +6,7 @@ Flask_HTTPAuth==4.5.0
 Flask_Migrate==3.1.0
 Flask_SQLAlchemy==2.5.1
 itsdangerous==2.1.2
+kubernetes==30.1.0
 PyMySQL==1.1.0
+PyMySQL==1.0.2
+Requests==2.32.3

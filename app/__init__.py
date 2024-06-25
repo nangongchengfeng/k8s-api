@@ -11,7 +11,6 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 
 from app.config import config
-from app.extension import db
 
 swagger_config = {
     "headers": [
@@ -56,23 +55,10 @@ def create_app(DevelopmentConfig=None):
     from flask import Flask
 
     app = Flask(__name__)
-    from app.extension import config_extensions
 
     # 加载配置项
     app.config.from_object(config.get(DevelopmentConfig))
     from app.api import config_blueprint
     config_blueprint(app)
-    config_extensions(app)
-
-    migrate = Migrate(app, db)
     Swagger(app, config=swagger_config, template=swagger_template)
-
-    # 非nginx调试，解决跨域CORS问题，一种为全局使用, supports_credentials=True
-    CORS(app, rresources={r'/*': {'origins': '*'}}, supports_credentials=True)
-    # socket 的信息
-    # 创建一个后台调度器
-    scheduler = BackgroundScheduler(timezone="Asia/Shanghai")
-    # scheduler.add_job(func=send_alert, trigger="interval", seconds=20)
-    # 启动调度器
-    scheduler.start()
     return app

@@ -12,10 +12,10 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 url_path_prefix = '/api'
 
+kubernetes_auth = os.getcwd() + "/auth/kubernetes.yaml"
+
+
 db_util = DBUtil('192.168.102.20', 'root', '123456', 'develo')  # auto_dev_hub
-KEYWORDS = ['1003626', '1003609']
-Ding_URl = "https://oapi.dingtalk.com/robot/send?access_token=xxxx"
-Ding_SCRET = "xxxx"
 
 
 # base configuration
